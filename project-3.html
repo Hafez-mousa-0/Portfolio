@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System Implementation - Hafez Mousa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">HAFEZ MOUSA</a>
+                
+                <div class="nav-links">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="index.html#about" class="nav-link">About</a>
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                    <a href="index.html#projects" class="nav-link active">Projects</a>
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="index.html#home" class="mobile-nav-link" data-section="home">Home</a>
+                <a href="index.html#about" class="mobile-nav-link" data-section="about">About</a>
+                <a href="index.html#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+                <a href="index.html#projects" class="mobile-nav-link active" data-section="projects">Projects</a>
+                <a href="index.html#experience" class="mobile-nav-link" data-section="experience">Experience</a>
+                <a href="index.html#education" class="mobile-nav-link" data-section="education">Education</a>
+                <a href="index.html#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-content-container">
+        <!-- Project Detail Section -->
+        <section class="section project-detail-section">
+            <div class="container">
+                <div class="project-detail-card glass-card">
+                    <div class="project-detail-header">
+                        <div>
+                            <h1 class="project-detail-title">Design System Implementation</h1>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-content">
+                        <div class="project-content">
+                            <h4>Project Overview</h4>
+                            <p>Developed a comprehensive design system from scratch to ensure consistency across all product lines. The system includes component library, design tokens, typography guidelines, and comprehensive documentation using Poppins and Roboto fonts.</p>
+                            
+                            <h4>Typography System</h4>
+                            <p>The design system utilizes two carefully selected Google Fonts to create a cohesive and professional typographic hierarchy:</p>
+                            
+                            <div class="typography-showcase">
+                                <div class="typography-item">
+                                    <h5>Poppins</h5>
+                                    <p class="poppins-demo">Used for headings, titles, and emphasis. Poppins provides a modern, geometric sans-serif style that ensures excellent readability at all sizes. Its clean lines and balanced proportions make it perfect for creating visual hierarchy in our interface designs.</p>
+                                </div>
+                                <div class="typography-item">
+                                    <h5>Roboto</h5>
+                                    <p class="roboto-demo">Used for body text, descriptions, and UI elements. Roboto offers a friendly and open character that enhances readability in longer text blocks. Its mechanical skeleton and natural forms make it highly legible across different screen sizes and resolutions.</p>
+                                </div>
+                            </div>
+                            
+                            <h4>Design System Components</h4>
+                            <p>The design system includes comprehensive component documentation and guidelines:</p>
+                            
+                            <div class="design-system-grid">
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Buttons</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Buttons.png" alt="Button Components" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Comprehensive button system with primary, secondary, and variant styles. All buttons follow consistent sizing, spacing, and interaction patterns.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Colors</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Colors.png" alt="Color Palette" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Carefully curated color palette with primary, secondary, and semantic colors. Includes accessibility guidelines and contrast ratios for all color combinations.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Fields</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Fields.png" alt="Form Fields" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Form field components with consistent styling, validation states, and error handling. Includes input fields, textareas, and select components.</p>
+                                </div>
+                            </div>
+                            
+                            <h4>Icon System</h4>
+                            <p>Integrated Google Material Icons throughout the design system to provide a consistent and recognizable iconography. Google Icons offer:</p>
+                            <ul>
+                                <li>Comprehensive icon library with thousands of options</li>
+                                <li>Consistent visual style and weight</li>
+                                <li>Excellent scalability and clarity at all sizes</li>
+                                <li>Easy integration with our component library</li>
+                                <li>Accessibility support with proper ARIA labels</li>
+                            </ul>
+                            
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Typography system using Poppins for headings and Roboto for body text</li>
+                                <li>Comprehensive component library with 50+ reusable components</li>
+                                <li>Design tokens for colors, spacing, and typography</li>
+                                <li>Google Material Icons integration for consistent iconography</li>
+                                <li>Detailed documentation and usage guidelines</li>
+                                <li>React component library implementation</li>
+                            </ul>
+                            
+                            <h4>Design Decisions</h4>
+                            <p>The choice of Poppins and Roboto fonts was strategic - Poppins provides strong visual hierarchy for headings and important UI elements, while Roboto ensures excellent readability for body content. Combined with Google Icons, this creates a cohesive, modern design language that scales across all our products.</p>
+                            
+                            <div class="case-study-tools">
+                                <span class="case-tool">Figma</span>
+                                <span class="case-tool">Poppins</span>
+                                <span class="case-tool">Roboto</span>
+                                <span class="case-tool">Google Icons</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Navigation -->
+            <div class="project-navigation">
+                <a href="project-1.html" class="project-nav-btn project-nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    <span>Previous Project</span>
+                </a>
+                <a href="project-4.html" class="project-nav-btn project-nav-next">
+                    <span>Next Project</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+            <img id="modalImage" src="" alt="Enlarged Image">
+            <div class="image-modal-footer">
+                <button class="image-modal-open" title="Open in new tab" aria-label="Open image in new tab">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Open Image</span>
+                </button>
+                <button class="image-modal-close" title="Close" aria-label="Close modal">
+                    <span>&times;</span>
+                    <span>Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+

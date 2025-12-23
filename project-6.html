@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Client Redesign - Hafez Mousa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">HAFEZ MOUSA</a>
+                
+                <div class="nav-links">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="index.html#about" class="nav-link">About</a>
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                    <a href="index.html#projects" class="nav-link active">Projects</a>
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="index.html#home" class="mobile-nav-link" data-section="home">Home</a>
+                <a href="index.html#about" class="mobile-nav-link" data-section="about">About</a>
+                <a href="index.html#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+                <a href="index.html#projects" class="mobile-nav-link active" data-section="projects">Projects</a>
+                <a href="index.html#experience" class="mobile-nav-link" data-section="experience">Experience</a>
+                <a href="index.html#education" class="mobile-nav-link" data-section="education">Education</a>
+                <a href="index.html#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-content-container">
+        <!-- Project Detail Section -->
+        <section class="section project-detail-section">
+            <div class="container">
+                <div class="project-detail-card glass-card">
+                    <div class="project-detail-header">
+                        <div>
+                            <h1 class="project-detail-title">Mobile Client Redesign</h1>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-content">
+                        <div class="project-content">
+                            <h4>Project Overview</h4>
+                            <p>Complete redesign of a mobile client application from a UI/UX perspective. This comprehensive project involved redesigning multiple key screens to improve user experience, visual hierarchy, and overall usability across the entire mobile application.</p>
+                            
+                            <h4>Redesigned Screens</h4>
+                            <p>The mobile client redesign covers all major user touchpoints:</p>
+                            
+                            <p class="image-note"><strong>Note:</strong> Images on the left are "Before" and images on the right are "After".</p>
+                            
+                            <div class="design-system-grid">
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Dashboard</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Dashboard.png" alt="Dashboard Screen" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Redesigned main dashboard with improved information architecture, better data visualization, and intuitive navigation.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Activity</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Activity.png" alt="Activity Screen" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Enhanced activity feed with better filtering, timeline visualization, and improved readability.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Jobs</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Job.png" alt="Jobs Screen" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Redesigned jobs listing with improved card layout, better search functionality, and enhanced job details presentation.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Jobs Filter</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Filter.png" alt="Jobs Filter Screen" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Intuitive filtering interface with clear categories, easy-to-use controls, and visual feedback.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Favorites</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Favorites.png" alt="Favorites Screen" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Streamlined favorites management with better organization, quick actions, and visual indicators.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">More</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/More.png" alt="More Screen" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Redesigned settings and additional options menu with improved categorization and navigation.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Login</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Login.png" alt="Login Screen" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Modern login interface with enhanced security features, better error handling, and improved user flow.</p>
+                                </div>
+                            </div>
+                            
+                            <h4>Key Improvements</h4>
+                            <ul>
+                                <li>Consistent design language across all screens</li>
+                                <li>Improved navigation and information architecture</li>
+                                <li>Enhanced visual hierarchy and readability</li>
+                                <li>Better use of mobile screen real estate</li>
+                                <li>Optimized touch targets and interaction patterns</li>
+                                <li>Improved accessibility and usability</li>
+                                <li>Streamlined user flows and reduced friction</li>
+                            </ul>
+                            <div class="case-study-tools">
+                                <span class="case-tool">Figma</span>
+                                <span class="case-tool">Mobile Design</span>
+                                <span class="case-tool">User Research</span>
+                                <span class="case-tool">Prototyping</span>
+                                <span class="case-tool">UI/UX Design</span>
+                                <span class="case-tool">Design System</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Navigation -->
+            <div class="project-navigation">
+                <a href="project-5.html" class="project-nav-btn project-nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    <span>Previous Project</span>
+                </a>
+                <a href="project-7.html" class="project-nav-btn project-nav-next">
+                    <span>Next Project</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+            <img id="modalImage" src="" alt="Enlarged Image">
+            <div class="image-modal-footer">
+                <button class="image-modal-open" title="Open in new tab" aria-label="Open image in new tab">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Open Image</span>
+                </button>
+                <button class="image-modal-close" title="Close" aria-label="Close modal">
+                    <span>&times;</span>
+                    <span>Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
