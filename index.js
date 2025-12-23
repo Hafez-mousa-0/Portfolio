@@ -35,6 +35,24 @@ navLinks.forEach(link => {
         const scrollContainer = mainContainer || window;
         
         if (targetSection) {
+            // Update active state immediately
+            const sectionId = link.getAttribute('data-section');
+            if (sectionId) {
+                manualNavigation = true;
+                desktopNavLinks.forEach(navLink => {
+                    navLink.classList.remove('active');
+                    if (navLink.getAttribute('data-section') === sectionId) {
+                        navLink.classList.add('active');
+                    }
+                });
+                mobileNavLinks.forEach(navLink => {
+                    navLink.classList.remove('active');
+                    if (navLink.getAttribute('data-section') === sectionId) {
+                        navLink.classList.add('active');
+                    }
+                });
+            }
+            
             if (mainContainer) {
                 const offsetTop = targetSection.offsetTop;
                 mainContainer.scrollTo({
@@ -44,6 +62,12 @@ navLinks.forEach(link => {
             } else {
                 targetSection.scrollIntoView({ behavior: 'smooth' });
             }
+            
+            // Update active section after scroll completes
+            setTimeout(() => {
+                manualNavigation = false;
+                updateActiveSection();
+            }, 800);
             
             // Close mobile menu if open
             if (mobileNav && !mobileNav.classList.contains('hidden')) {
@@ -59,19 +83,39 @@ navLinks.forEach(link => {
 const sections = document.querySelectorAll('section[id]');
 const desktopNavLinks = document.querySelectorAll('.nav-link');
 const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+let manualNavigation = false;
 
 function updateActiveSection() {
+    // Don't override manual navigation for a short period
+    if (manualNavigation) {
+        return;
+    }
+    
     let currentSection = '';
     const scrollTop = mainContainer ? mainContainer.scrollTop : window.pageYOffset;
+    const scrollHeight = mainContainer ? mainContainer.scrollHeight : document.documentElement.scrollHeight;
+    const clientHeight = mainContainer ? mainContainer.clientHeight : window.innerHeight;
     
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (scrollTop >= sectionTop - 150) {
-            currentSection = section.getAttribute('id');
+    // Check if we're near the bottom (within 200px) - likely the contact section
+    const isNearBottom = scrollTop + clientHeight >= scrollHeight - 200;
+    
+    if (isNearBottom) {
+        // Find the contact section
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            currentSection = 'contact';
         }
-    });
+    } else {
+        // Normal section detection
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (scrollTop >= sectionTop - 150 && scrollTop < sectionTop + sectionHeight - 150) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+    }
     
     // Update desktop nav
     desktopNavLinks.forEach(link => {
@@ -149,13 +193,6 @@ if (mainContainer) {
         const heroHeight = hero ? hero.offsetHeight : 0;
         
         if (scrollTop < heroHeight) {
-            // Parallax effect for hero content
-            if (heroContent) {
-                const parallaxValue = scrollTop * 0.5;
-                heroContent.style.transform = `translateY(${parallaxValue}px)`;
-                heroContent.style.opacity = 1 - (scrollTop / heroHeight) * 0.5;
-            }
-            
             // Blobs are hidden in professional theme
         }
         
