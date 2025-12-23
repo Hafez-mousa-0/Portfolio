@@ -41,10 +41,12 @@ body {
 
 .section {
   background: #ffffff;
+  padding-block: 1.5rem;
 }
 
 .section-gray {
   background: #fafafa;
+  padding-block: 1.5rem;
 }
 
 html {
@@ -482,6 +484,7 @@ a.nav-logo {
   font-weight: 700;
   text-align: center;
   margin-block: 4rem;
+  margin-top: 2rem;
   color: #000000;
   position: relative;
   letter-spacing: 1px;
@@ -575,7 +578,7 @@ a.nav-logo {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: 15rem;
+  gap: 1.5rem;
 }
 
 .skills-row {
@@ -1042,6 +1045,7 @@ a.nav-logo {
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;
+  min-height: 218px;
 }
 
 .case-study-tools {
@@ -1411,13 +1415,14 @@ a.nav-logo {
   padding: 1rem;
   border-left: 3px solid rgba(0, 0, 0, 0.2);
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 0.3rem;
+  justify-content: start;
 }
 
 .image-note .info-icon {
   display: inline-block;
-  vertical-align: middle;
+  margin-top: 3px;
   color: rgba(0, 0, 0, 0.7);
   flex-shrink: 0;
   width: 20px;
@@ -1543,6 +1548,7 @@ a.nav-logo {
   .section-title {
       font-size: 2rem;
       margin-block: 3rem;
+      margin-top: 1rem;
   }
   
   .hero-title {
