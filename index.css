@@ -227,26 +227,41 @@ html {
   width: 100%;
 }
 
-.nav-link:hover,
 .nav-link.active {
   color: #000000;
   font-weight: 600;
 }
 
+.nav-link:hover {
+  color: #000000; 
+}
+
 .mobile-menu-btn {
   display: block;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgb(141 141 141 / 5%);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   padding: 0.5rem;
   transition: all 0.3s;
   color: #000000;
 }
 
+.label {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  margin-right: 0.5rem;
+  white-space: nowrap;
+}
+
+.description {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .mobile-menu-btn:hover {
-  background: rgba(0, 0, 0, 0.1);
-  transform: scale(1.05);
+  background: rgb(157 157 157 / 10%);
+  transform: scale(1);
 }
 
 .menu-icon,
@@ -386,7 +401,7 @@ html {
 
 .btn {
   display: inline-block;
-  padding: 0.875rem 2.5rem;
+  padding: 0.7rem 2rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
@@ -399,7 +414,6 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
 }
 
 .btn::before {
@@ -440,10 +454,8 @@ a.nav-logo {
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #adbabb;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  color: #000000;
 }
 
 
@@ -1189,6 +1201,7 @@ a.nav-logo {
   font-weight: 600;
   color: #000000;
   margin-bottom: 1rem;
+  line-height: 0.7;
 }
 
 .poppins-demo {
@@ -1238,8 +1251,6 @@ a.nav-logo {
 .design-system-image-placeholder {
   position: relative;
   width: 100%;
-  background: #f8f8f8;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   overflow: hidden;
   aspect-ratio: 16 / 10;
@@ -1362,6 +1373,10 @@ a.nav-logo {
   margin-bottom: 0.4rem;
 }
 
+.main-content-container .glass-card {
+  background-color: #fff !important;
+}
+
 .project-content h4:first-child {
   margin-top: 0;
 }
@@ -1371,7 +1386,6 @@ a.nav-logo {
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.8;
   font-weight: 400;
-  margin-bottom: 1rem;
 }
 
 .project-content ul {
@@ -1390,6 +1404,7 @@ a.nav-logo {
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .project-content ul li:before {
@@ -1434,6 +1449,21 @@ a.nav-logo {
   color: rgba(0, 0, 0, 0.8);
 }
 
+/* Video Container */
+.video-container {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
 /* Project Comparison Images */
 .project-comparison {
   display: flex;
@@ -1469,11 +1499,8 @@ a.nav-logo {
 .comparison-image-placeholder {
   position: relative;
   width: 100%;
-  background: #f8f8f8;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   overflow: hidden;
-  padding: 10px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1776,7 +1803,8 @@ a.nav-logo {
 }
 
 .project-image:hover {
-  transform: scale(1.02);
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 @keyframes fadeIn {
