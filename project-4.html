@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Process Review & Deployment - Hafez Mousa</title>
+    <title>FIS - Hafez Mousa</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,75 +61,149 @@
                 <div class="project-detail-card">
                     <div class="project-detail-header">
                         <div>
-                            <h1 class="project-detail-title">Process Review & Deployment</h1>
+                            <h1 class="project-detail-title">Frontline Intelligence Service</h1>
                         </div>
                     </div>
 
                     <div class="project-detail-content">
                         <div class="project-content">
                             <h4>Project Overview</h4>
-                            <p>Redesigned an incomplete workflow process by implementing review stages and deployment changes. The project focused on improving process efficiency, adding quality control checkpoints, and streamlining the deployment workflow.</p>
+                            <p>I worked on creating the FIS landing and onboarding experience to simplify first-time engagement,
+                                 guide users through account setup, and deliver a clear, intuitive entry point into the FIS experience. The goal was to increase first-time conversion and engagement while reducing onboarding friction by combining file upload, prompt entry, and account creation into one unified flow.</p>
                             
-                            <h4>Transformation Process</h4>
-                            <p>The process improvement transformed from an old design (Before) into a comprehensive modern system with review and deployment stages (After):</p>
+                            <h4>Landing Page Experience</h4>
+                            <p>The redesigned landing page features a clean, focused interface that immediately communicates value:</p>
+                            <ul class="headline-list">
+                                <li><span class="label">Headline:</span> <span class="description">"What will you discover today?" with subtext "Uncover the hidden intelligence in your data and turn it into action."</span></li>
+                                <li><span class="label">Central Chat Interface:</span> <span class="description">A prominent chat box with "+" icon for file upload, text input for prompts, and "Explore" button</span></li>
+                                <li><span class="label">Dynamic Typing Animation:</span> <span class="description">The chat box displays rotating example prompts that demonstrate FIS capabilities</span></li>
+                                <li><span class="label">Feature Showcase:</span> <span class="description">Three visual boxes highlighting Connect, Analyze, and Act capabilities with the tagline "From raw data to real decisions — instantly."</span></li>
+                            </ul>
                             
-                            <p class="image-note">
-                                <svg class="info-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                                </svg>
-                                Images on the left are "Before" and images on the right are "After".
-                            </p>
+                            <h4>User Input Scenarios & Flow</h4>
+                            <p>I designed multiple user journey paths to handle different entry points:</p>
+                            <ul>
+                                <li><span class="label">Prompt Only:</span> <span class="description">Users entering prompts without files are guided to select a file or choose from sample datasets</span></li>
+                                <li><span class="label">File Upload Only:</span> <span class="description">Users uploading files are prompted to sign up, then receive general analysis of their dataset</span></li>
+                                <li><span class="label">Both Provided:</span> <span class="description">Seamless flow when both file and prompt are provided</span></li>
+                                <li><span class="label">File First:</span> <span class="description">Clicking "+" opens file selector, then prompts account creation</span></li>
+                            </ul>
                             
-                            <div class="process-comparison">
-                                <div class="process-before">
-                                    <div class="comparison-image-wrapper">
-                                        <div class="comparison-image-placeholder">
-                                            <img src="images/C.png" alt="Incomplete Process" class="project-image">
+                            <h4>Account Creation & Onboarding</h4>
+                            <p>Streamlined sign-up process with validation and error handling for username, password, and password confirmation. The flow ensures users can proceed only after successful registration.</p>
+                            
+                            <h4>Post-Analysis Experience</h4>
+                            <p>After analysis, users are guided through:</p>
+                            <ul>
+                                <li><span class="label">Data Table Review:</span> <span class="description">Clean, scrollable preview with auto-detected columns, sorting, filtering, and sampling</span></li>
+                                <li><span class="label">Prompt Review:</span> <span class="description">Display and edit functionality for user-entered or system-generated prompts</span></li>
+                                <li><span class="label">Workspace Transition:</span> <span class="description">Seamless transition to the main Workspace screen after confirmation</span></li>
+                            </ul>
+                            
+                            <div class="design-system-grid">
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Landing-Page.png" alt="FIS Landing Page" class="project-image">
                                         </div>
                                     </div>
                                 </div>
                                 
-                                <div class="comparison-arrow">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="9 18 15 12 9 6"></polyline>
-                                    </svg>
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/SingUp.png" alt="FIS Sign Up" class="project-image">
+                                        </div>
+                                    </div>
                                 </div>
                                 
-                                <div class="process-after">
-                                    <div class="comparison-image-wrapper">
-
-                                        <div class="comparison-image-placeholder">
-                                            <img src="images/E.png" alt="Deployment Process" class="project-image">
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Workspace.png" alt="FIS Workspace" class="project-image">
                                         </div>
                                     </div>
-                                    <div class="comparison-image-wrapper">
-                                        <div class="comparison-image-placeholder">
-                                            <img src="images/D.png" alt="Review Process" class="project-image">
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Upload-File.png" alt="FIS Upload File" class="project-image">
                                         </div>
                                     </div>
-                                    
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Type-Prompt.png" alt="FIS Type Prompt" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/AI-Insights.png" alt="FIS AI Insights" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Analysis.png" alt="FIS Analysis" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Review-and-Edit.png" alt="FIS Review and Edit" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Explore.png" alt="FIS Explore" class="project-image">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
-                            <h4>Key Improvements</h4>
-                            <ul>
-                                <li>Added review stage to ensure quality before deployment</li>
-                                <li>Implemented clear approval workflow with multiple checkpoints</li>
-                                <li>Streamlined deployment process with automated steps</li>
-                                <li>Enhanced visibility into process status and progress</li>
-                                <li>Reduced errors and improved overall process reliability</li>
-                                <li>Better tracking and documentation of changes</li>
-                            </ul>
-                            <h4>Design Decisions</h4>
-                            <p>The transformation from an incomplete process to a comprehensive workflow with review and deployment stages significantly improved process reliability and quality. By adding clear checkpoints and structured stages, we reduced errors and improved team collaboration.</p>
+                            <h4>Prototyping Showcase</h4>
+                            <p>Watch the interactive prototype demonstration showcasing the user flow and interface interactions:</p>
                             
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="images/FIS/FIS.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Unified onboarding flow combining file upload, prompt entry, and account creation</li>
+                                <li>Dynamic typing animation showcasing FIS capabilities and use cases</li>
+                                <li>Multiple user journey paths handling different entry scenarios</li>
+                                <li>Sample dataset integration for immediate value demonstration</li>
+                                <li>Streamlined account creation with comprehensive validation</li>
+                                <li>Intuitive data preview and review interface</li>
+                                <li>Seamless transition from onboarding to workspace</li>
+                                <li>Support for multiple data sources</li>
+                            </ul>
+                        
                             <div class="case-study-tools">
                                 <span class="case-tool">Figma</span>
-                                <span class="case-tool">Design System</span>
-                                <span class="case-tool">Figma Make</span>
+                                <span class="case-tool">UI/UX Design</span>
+                                <span class="case-tool">User Research</span>
+                                <span class="case-tool">Prototyping</span>
+                                <span class="case-tool">Onboarding Design</span>
                                 <span class="case-tool">Google Icons</span>
+                                <span class="case-tool">User Flow Design</span>
                             </div>
                         </div>
                     </div>
@@ -144,7 +218,7 @@
                     </svg>
                     <span>Previous Project</span>
                 </a>
-                <a href="project-10.html" class="project-nav-btn project-nav-next">
+                <a href="project-5.html" class="project-nav-btn project-nav-next">
                     <span>Next Project</span>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="9 18 15 12 9 6"></polyline>

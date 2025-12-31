@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Redesign Project - Hafez Mousa</title>
+    <title>Design System Implementation - Hafez Mousa</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,89 +57,120 @@
     <main class="main-content-container">
         <!-- Project Detail Section -->
         <section class="section project-detail-section">
-        <div class="container">
-            <div class="project-detail-card">
-                <div class="project-detail-header">
-                    <div>
-                        <h1 class="project-detail-title">Dashboard Redesign Project</h1>
-                    </div>
-                </div>
-
-                <div class="project-detail-content">
-                    <div class="project-content">
-                        <h4>Project Overview</h4>
-                        <p>Redesigned a complex dashboard interface to improve data accessibility and user experience. The transformation involved restructuring the layout and enhancing visual elements.</p>
-                        
-                        <h4>Transformation Process</h4>
-                        <p>The redesign process converted the original dashboard (A.png) into a more intuitive and visually appealing version (B.png):</p>
-                        
-                        <div class="project-comparison">
-                            <div class="comparison-item">
-                                <div class="comparison-image-wrapper">
-                                    <div class="comparison-label">Before</div>
-                                    <div class="comparison-image-placeholder">
-                                        <img src="images/A.png" alt="Original Dashboard" class="project-image">
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="comparison-arrow">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="9 18 15 12 9 6"></polyline>
-                                </svg>
-                            </div>
-                            
-                            <div class="comparison-item">
-                                <div class="comparison-image-wrapper">
-                                    <div class="comparison-label">After</div>
-                                    <div class="comparison-image-placeholder">
-                                        <img src="images/B.png" alt="Redesigned Dashboard" class="project-image">
-                                    </div>
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="project-detail-card">
+                    <div class="project-detail-header">
+                        <div>
+                            <h1 class="project-detail-title">Design System Implementation</h1>
                         </div>
-                        
-                        <h4>Key Improvements</h4>
-                        <ul>
-                            <li>Reorganized data presentation for better clarity</li>
-                            <li>Improved chart and graph visualizations</li>
-                            <li>Enhanced color coding and visual indicators</li>
-                            <li>Better responsive layout for different screen sizes</li>
-                            <li>Streamlined navigation and filtering options</li>
-                        </ul>
-                        
-                        <h4>Design Decisions</h4>
-                        <p>The redesign prioritized information hierarchy and visual clarity. By reorganizing the layout and improving data visualization, users can now access critical information more efficiently.</p>
-                        
-                        <div class="case-study-tools">
-                            <span class="case-tool">Figma</span>
-                            <span class="case-tool">Data Visualization</span>
-                            <span class="case-tool">User Research</span>
-                            <span class="case-tool">Prototyping</span>
+                    </div>
+
+                    <div class="project-detail-content">
+                        <div class="project-content">
+                            <h4>Project Overview</h4>
+                            <p>Developed a comprehensive design system from scratch to ensure consistency across all product lines. The system includes component library, design tokens, typography guidelines, and comprehensive documentation using Poppins and Roboto fonts.</p>
+                            
+                            <h4>Typography System</h4>
+                            <p>The design system utilizes two carefully selected Google Fonts to create a cohesive and professional typographic hierarchy:</p>
+                            
+                            <div class="typography-showcase">
+                                <div class="typography-item">
+                                    <h5>Poppins</h5>
+                                    <p class="poppins-demo">Used for headings, titles, and emphasis. Poppins provides a modern, geometric sans-serif style that ensures excellent readability at all sizes. Its clean lines and balanced proportions make it perfect for creating visual hierarchy in our interface designs.</p>
+                                </div>
+                                <div class="typography-item">
+                                    <h5>Roboto</h5>
+                                    <p class="roboto-demo">Used for body text, descriptions, and UI elements. Roboto offers a friendly and open character that enhances readability in longer text blocks. Its mechanical skeleton and natural forms make it highly legible across different screen sizes and resolutions.</p>
+                                </div>
+                            </div>
+                            
+                            <h4>Design System Components</h4>
+                            <p>The design system includes comprehensive component documentation and guidelines:</p>
+                            
+                            <div class="design-system-grid">
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Buttons</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Buttons.png" alt="Button Components" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Comprehensive button system with primary, secondary, and variant styles. All buttons follow consistent sizing, spacing, and interaction patterns.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Colors</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Colors.png" alt="Color Palette" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Carefully curated color palette with primary, secondary, and semantic colors. Includes accessibility guidelines and contrast ratios for all color combinations.</p>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-label">Fields</div>
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/Fields.png" alt="Form Fields" class="project-image">
+                                        </div>
+                                    </div>
+                                    <p class="design-system-description">Form field components with consistent styling, validation states, and error handling. Includes input fields, textareas, and select components.</p>
+                                </div>
+                            </div>
+                            
+                            <h4>Icon System</h4>
+                            <p>Integrated Google Material Icons throughout the design system to provide a consistent and recognizable iconography. Google Icons offer:</p>
+                            <ul>
+                                <li>Comprehensive icon library with thousands of options</li>
+                                <li>Consistent visual style and weight</li>
+                                <li>Excellent scalability and clarity at all sizes</li>
+                                <li>Easy integration with our component library</li>
+                                <li>Accessibility support with proper ARIA labels</li>
+                            </ul>
+                            
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Typography system using Poppins for headings and Roboto for body text</li>
+                                <li>Comprehensive component library with 50+ reusable components</li>
+                                <li>Design tokens for colors, spacing, and typography</li>
+                                <li>Google Material Icons integration for consistent iconography</li>
+                                <li>Detailed documentation and usage guidelines</li>
+                                <li>React component library implementation</li>
+                            </ul>
+                            
+                            <h4>Design Decisions</h4>
+                            <p>The choice of Poppins and Roboto fonts was strategic - Poppins provides strong visual hierarchy for headings and important UI elements, while Roboto ensures excellent readability for body content. Combined with Google Icons, this creates a cohesive, modern design language that scales across all our products.</p>
+                            
+                            <div class="case-study-tools">
+                                <span class="case-tool">Figma</span>
+                                <span class="case-tool">Poppins</span>
+                                <span class="case-tool">Roboto</span>
+                                <span class="case-tool">Google Icons</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Project Navigation -->
-        <div class="project-navigation">
-            <a href="project-1.html" class="project-nav-btn project-nav-prev">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-                <span>Previous Project</span>
-            </a>
-            <a href="project-3.html" class="project-nav-btn project-nav-next">
-                <span>Next Project</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-            </a>
-        </div>
-    </section>
-
+            <!-- Project Navigation -->
+            <div class="project-navigation">
+                <a href="project-1.html" class="project-nav-btn project-nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    <span>Previous Project</span>
+                </a>
+                <a href="project-3.html" class="project-nav-btn project-nav-next">
+                    <span>Next Project</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
     </main>
+
     <!-- Image Modal -->
     <div id="imageModal" class="image-modal">
         <div class="image-modal-content">
