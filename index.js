@@ -3,12 +3,12 @@ const mainContainer = document.querySelector('.main-content-container');
 
 // Set active navigation based on current page
 function setActiveNavigation() {
-    const currentPage = window.location.pathname.split('/').pop() || 'home.html';
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const desktopNavLinks = document.querySelectorAll('.nav-link');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
     
     // Check if we're on home page or any project page
-    const isHomeOrProject = currentPage === 'home.html' || 
+    const isHomeOrProject = currentPage === 'index.html' || 
                             currentPage === '' || 
                             currentPage.startsWith('project-');
     
@@ -20,7 +20,7 @@ function setActiveNavigation() {
         link.classList.remove('active');
         
         // If on home or project page, activate Home
-        if (isHomeOrProject && (href === 'home.html' || dataSection === 'home')) {
+        if (isHomeOrProject && (href === 'index.html' || dataSection === 'home')) {
             link.classList.add('active');
         }
         // If on about page, activate About
@@ -41,7 +41,7 @@ function setActiveNavigation() {
         link.classList.remove('active');
         
         // If on home or project page, activate Home
-        if (isHomeOrProject && (href === 'home.html' || dataSection === 'home')) {
+        if (isHomeOrProject && (href === 'index.html' || dataSection === 'home')) {
             link.classList.add('active');
         }
         // If on about page, activate About
@@ -79,8 +79,8 @@ navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         const href = link.getAttribute('href');
         
-        // If link points to another page (like about.html, experience.html, home.html), allow default navigation
-        if (href && (href.includes('.html') || href === 'home.html' || href === 'about.html' || href === 'experience.html')) {
+        // If link points to another page (like about.html, experience.html, index.html), allow default navigation
+        if (href && (href.includes('.html') || href === 'index.html' || href === 'about.html' || href === 'experience.html')) {
             // Allow default navigation to work - browser will handle the page change
             // Close mobile menu if open
             if (mobileNav && !mobileNav.classList.contains('hidden')) {
