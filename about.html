@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Hafez Mousa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <a href="home.html">
+                        <img src="hm-logo.svg" alt="Hafez Mousa Logo" class="nav-logo-img" width="48" title="Hafez Mousa">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="home.html" class="nav-link" data-section="home">Home</a>
+                    <a href="about.html" class="nav-link active" data-section="about">About</a>
+                    <a href="experience.html" class="nav-link" data-section="experience">Experience</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="home.html" class="mobile-nav-link" data-section="home">Home</a>
+                <a href="about.html" class="mobile-nav-link active" data-section="about">About</a>
+                <a href="experience.html" class="mobile-nav-link" data-section="experience">Experience</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-content-container">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm a UI/UX Developer with over 5 years of experience creating intuitive and
+                        engaging digital experiences. Currently working at Webalo, I specialize in
+                        designing enterprise-level applications that serve thousands of users across
+                        global organizations.
+                    </p>
+                    <p class="about-paragraph">
+                        My approach combines user research, data-driven design decisions, and modern
+                        development practices to deliver solutions that not only look great but solve
+                        real business problems. I'm passionate about creating accessible,
+                        user-friendly interfaces that make complex workflows simple.
+                    </p>
+                </div>
+
+                <div class="about-cards">
+                    <div class="about-card glass-card liquid-hover">
+                        <div class="card-icon-wrapper">
+                            <svg class="card-icon blue" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Enterprise Experience</h3>
+                            <p class="card-description">
+                                3+ years designing enterprise-level applications for large organizations
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-card glass-card liquid-hover">
+                        <div class="card-icon-wrapper">
+                            <svg class="card-icon orange" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="card-title">SaaS Projects</h3>
+                            <p class="card-description">
+                                Designing scalable SaaS solutions with focus on user onboarding and growth
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-card glass-card liquid-hover">
+                        <div class="card-icon-wrapper">
+                            <svg class="card-icon green" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="card-title">Global Collaboration</h3>
+                            <p class="card-description">
+                                Working with international teams across different time zones
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-card glass-card liquid-hover">
+                        <div class="card-icon-wrapper">
+                            <svg class="card-icon purple" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="card-title">User-Centered Design</h3>
+                            <p class="card-description">
+                                Research-driven approach with focus on usability and accessibility
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="skills-container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-section-item glass-card">
+                    <div class="skills-header">
+                        <h3 class="skills-section-title">User Interface</h3>
+                    </div>
+                    <div class="skills-content">
+                        <p class="skills-paragraph">I specialize in designing and implementing comprehensive UI components including buttons, forms, input fields, navigation bars, side menus, modals, dialogs, pop-ups, cards, tables, dropdowns, and tabs. My focus is on creating responsive layouts that work seamlessly across mobile and desktop devices, ensuring consistent user experiences with proper hover states, focus indicators, and interactive feedback.</p>
+                    </div>
+                </div>
+                <div class="skills-section-item glass-card">
+                    <div class="skills-header">
+                        <h3 class="skills-section-title">User Experience</h3>
+                    </div>
+                    <div class="skills-content">
+                        <p class="skills-paragraph">My UX skill set focuses on designing user-centered digital experiences. I conduct user research and usability testing to uncover insights that guide design decisions. I translate these insights into user flows, journey maps, and clear information architecture, and bring ideas to life through wireframing and prototyping. Throughout the process, I apply accessibility and usability best practices to ensure intuitive, inclusive, and effective UX solutions.</p>
+                    </div>
+                </div>
+                <div class="skills-section-item glass-card">
+                    <div class="skills-header">
+                        <h3 class="skills-section-title">Technical Skills</h3>
+                    </div>
+                    <div class="skills-content">
+                        <p class="skills-paragraph">I have strong expertise in front-end development technologies including HTML for semantic markup, CSS for styling and layout, and Bootstrap for responsive framework implementation. I'm proficient in JavaScript for building interactive functionality and logic. I work extensively with Angular and Angular Material for component-based development, as well as React and Material UI for creating modern, scalable user interfaces.</p>
+                    </div>
+                </div>
+                <div class="skills-section-item glass-card">
+                    <div class="skills-header">
+                        <h3 class="skills-section-title">Tools</h3>
+                    </div>
+                    <div class="skills-content">
+                        <p class="skills-paragraph">I utilize a comprehensive toolkit for design and development. For design work, I use Figma for UI/UX design and prototyping, Photoshop for image editing, and Illustrator for vector graphics. I leverage Figma Make for automation and workflow optimization. For development, I work with AI-powered tools like Lovable and Cursor for enhanced productivity, alongside Visual Studio Code as my primary code editor. I also use Git for version control and collaborative development workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-intro">
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <p class="footer-intro-text">
+                        I'm exploring new opportunities that will help me grow in my career. I'm passionate about learning and expanding my skills, and I'm always looking for ways to challenge myself and take on new experiences.
+                    </p>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <div class="footer-contact-methods">
+                        <a href="mailto:hafezmousa00@gmail.com" class="footer-contact-item liquid-hover">
+                            <div class="footer-icon-wrapper">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="footer-contact-info">
+                                <span class="footer-contact-label">Email</span>
+                                <span class="footer-contact-value">hafezmousa00@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/hafez-mousa-a0aa2425b/" target="_blank" rel="noopener noreferrer" class="footer-contact-item liquid-hover">
+                            <div class="footer-icon-wrapper">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="footer-contact-info">
+                                <span class="footer-contact-label">LinkedIn</span>
+                                <span class="footer-contact-value">Hafez Mousa</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+201090703095" class="footer-contact-item liquid-hover">
+                            <div class="footer-icon-wrapper">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="footer-contact-info">
+                                <span class="footer-contact-label">Phone</span>
+                                <span class="footer-contact-value">+20 10 90 70 30 95</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">Designed and Built by Hafez Mousa © 2026</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
+

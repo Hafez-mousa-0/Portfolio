@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIS - Hafez Mousa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <a href="home.html">
+                        <img src="hm-logo.svg" alt="Hafez Mousa Logo" class="nav-logo-img" width="48" title="Hafez Mousa">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="home.html" class="nav-link active" data-section="home">Home</a>
+                    <a href="about.html" class="nav-link" data-section="about">About</a>
+                    <a href="experience.html" class="nav-link" data-section="experience">Experience</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="home.html" class="mobile-nav-link active" data-section="home">Home</a>
+                <a href="about.html" class="mobile-nav-link" data-section="about">About</a>
+                <a href="experience.html" class="mobile-nav-link" data-section="experience">Experience</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-content-container">
+        <!-- Project Detail Section -->
+        <section class="section project-detail-section">
+            <div class="container">
+                <div class="project-detail-card">
+                    <div class="project-detail-header">
+                        <div>
+                            <h1 class="project-detail-title">Frontline Intelligence Service</h1>
+                        </div>
+                    </div>
+
+                    <div class="project-detail-content">
+                        <div class="project-content">
+                            <h4>Project Overview</h4>
+                            <p>I worked on creating the FIS landing and onboarding experience to simplify first-time engagement,
+                                 guide users through account setup, and deliver a clear, intuitive entry point into the FIS experience. The goal was to increase first-time conversion and engagement while reducing onboarding friction by combining file upload, prompt entry, and account creation into one unified flow.</p>
+                            
+                            <h4>Landing Page Experience</h4>
+                            <p>The redesigned landing page features a clean, focused interface that immediately communicates value:</p>
+                            <ul class="headline-list">
+                                <li><span class="label">Headline:</span> <span class="description">"What will you discover today?" with subtext "Uncover the hidden intelligence in your data and turn it into action."</span></li>
+                                <li><span class="label">Central Chat Interface:</span> <span class="description">A prominent chat box with "+" icon for file upload, text input for prompts, and "Explore" button</span></li>
+                                <li><span class="label">Dynamic Typing Animation:</span> <span class="description">The chat box displays rotating example prompts that demonstrate FIS capabilities</span></li>
+                                <li><span class="label">Feature Showcase:</span> <span class="description">Three visual boxes highlighting Connect, Analyze, and Act capabilities with the tagline "From raw data to real decisions — instantly."</span></li>
+                            </ul>
+                            
+                            <h4>User Input Scenarios & Flow</h4>
+                            <p>I designed multiple user journey paths to handle different entry points:</p>
+                            <ul>
+                                <li><span class="label">Prompt Only:</span> <span class="description">Users entering prompts without files are guided to select a file or choose from sample datasets</span></li>
+                                <li><span class="label">File Upload Only:</span> <span class="description">Users uploading files are prompted to sign up, then receive general analysis of their dataset</span></li>
+                                <li><span class="label">Both Provided:</span> <span class="description">Seamless flow when both file and prompt are provided</span></li>
+                                <li><span class="label">File First:</span> <span class="description">Clicking "+" opens file selector, then prompts account creation</span></li>
+                            </ul>
+                            
+                            <h4>Account Creation & Onboarding</h4>
+                            <p>Streamlined sign-up process with validation and error handling for username, password, and password confirmation. The flow ensures users can proceed only after successful registration.</p>
+                            
+                            <h4>Post-Analysis Experience</h4>
+                            <p>After analysis, users are guided through:</p>
+                            <ul>
+                                <li><span class="label">Data Table Review:</span> <span class="description">Clean, scrollable preview with auto-detected columns, sorting, filtering, and sampling</span></li>
+                                <li><span class="label">Prompt Review:</span> <span class="description">Display and edit functionality for user-entered or system-generated prompts</span></li>
+                                <li><span class="label">Workspace Transition:</span> <span class="description">Seamless transition to the main Workspace screen after confirmation</span></li>
+                            </ul>
+                            
+                            <div class="design-system-grid">
+                                <div class="design-system-item">
+                                    <h5 class="design-system-item-title">Landing Page</h5>
+                                    <p class="design-system-item-description">Welcome screen with dynamic typing animation showcasing FIS capabilities and use cases to engage users from the start.</p>
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Landing-Page-1.png" alt="FIS Landing Page" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <h5 class="design-system-item-title">Sign Up</h5>
+                                    <p class="design-system-item-description">Streamlined account creation interface with comprehensive validation and user-friendly form design.</p>
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/SingUp-2.png" alt="FIS Sign Up" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <h5 class="design-system-item-title">Type Prompt</h5>
+                                    <p class="design-system-item-description">Interactive prompt entry interface allowing users to input their data requirements and preferences.</p>
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Type-Prompt-3.png" alt="FIS Type Prompt" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <h5 class="design-system-item-title">Upload File</h5>
+                                    <p class="design-system-item-description">File upload interface supporting multiple data sources with drag-and-drop functionality and progress indicators.</p>
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Upload-File-4.png" alt="FIS Upload File" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <h5 class="design-system-item-title">Explore</h5>
+                                    <p class="design-system-item-description">Data exploration interface providing intuitive navigation and discovery of uploaded datasets.</p>
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Explore-5.png" alt="FIS Explore" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <h5 class="design-system-item-title">Review and Edit</h5>
+                                    <p class="design-system-item-description">Data review and editing interface with intuitive controls for data manipulation and validation.</p>
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Review-and-Edit-6.png" alt="FIS Review and Edit" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <h5 class="design-system-item-title">Analysis</h5>
+                                    <p class="design-system-item-description">Data analysis dashboard displaying insights, patterns, and visualizations from processed information.</p>
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Analysis-7.png" alt="FIS Analysis" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <h5 class="design-system-item-title">Workspace</h5>
+                                    <p class="design-system-item-description">Main workspace interface providing seamless access to all features and tools in a unified environment.</p>
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/Workspace-8.png" alt="FIS Workspace" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="design-system-item">
+                                    <h5 class="design-system-item-title">AI Insights</h5>
+                                    <p class="design-system-item-description">AI-powered insights dashboard showcasing intelligent recommendations and automated analysis results.</p>
+                                    <div class="design-system-image-wrapper">
+                                        <div class="design-system-image-placeholder">
+                                            <img src="images/FIS/AI-Insights-9.png" alt="FIS AI Insights" class="project-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4>Prototyping Showcase</h4>
+                            <p>Watch the interactive prototype demonstration showcasing the user flow and interface interactions:</p>
+                            
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="images/FIS/FIS.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Unified onboarding flow combining file upload, prompt entry, and account creation</li>
+                                <li>Dynamic typing animation showcasing FIS capabilities and use cases</li>
+                                <li>Multiple user journey paths handling different entry scenarios</li>
+                                <li>Sample dataset integration for immediate value demonstration</li>
+                                <li>Streamlined account creation with comprehensive validation</li>
+                                <li>Intuitive data preview and review interface</li>
+                                <li>Seamless transition from onboarding to workspace</li>
+                                <li>Support for multiple data sources</li>
+                            </ul>
+                        
+                            <div class="case-study-tools">
+                                <span class="case-tool">Figma</span>
+                                <span class="case-tool">UI/UX Design</span>
+                                <span class="case-tool">User Research</span>
+                                <span class="case-tool">Prototyping</span>
+                                <span class="case-tool">Onboarding Design</span>
+                                <span class="case-tool">Google Icons</span>
+                                <span class="case-tool">User Flow Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Navigation -->
+            <div class="project-navigation">
+                <a href="project-3.html" class="project-nav-btn project-nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    <span>Previous Project</span>
+                </a>
+                <a href="project-5.html" class="project-nav-btn project-nav-next">
+                    <span>Next Project</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+            <img id="modalImage" src="" alt="Enlarged Image">
+            <div class="image-modal-footer">
+                <button class="image-modal-open" title="Open in new tab" aria-label="Open image in new tab">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Open Image</span>
+                </button>
+                <button class="image-modal-close" title="Close" aria-label="Close modal">
+                    <span>&times;</span>
+                    <span>Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
